@@ -1,3 +1,4 @@
+import MainHeader from '@/components/mainHeader';
 import './globals.css';
 
 export const metadata = {
@@ -30,7 +31,8 @@ export default function RootLayout({ children }) {
           </svg>
         </div>
 
-        {children}
+        <MainHeader />
+        { children }
       </body>
     </html>
   );
