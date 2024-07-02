@@ -32,8 +32,11 @@ export default async function MealsPage() {
             {/* CTA -> Call to action */}
         </header>
         <main>
-            <Suspense fallback={<MealsLoadingPage />}>
+            {/* <Suspense fallback={<MealsLoadingPage />}>
                 {<Meals />}
+            </Suspense> */}
+            <Suspense fallback={<p className={classes.loading}>Loading meals...</p>}>
+                <Meals />
             </Suspense>
         </main>
         </>
